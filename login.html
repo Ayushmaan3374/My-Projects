@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="ok.css">
+</head>
+<body background="back1.jpg" style="background-repeat: no-repeat;">
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="login.php" method="post" class="login">
+                <label for="username">Username:</label> 
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email_add" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" name="submit" value="Login">
+            </form>
+        </div>
+        <div class="signup-form">
+            <h2>Sign up</h2>
+            <form action="signup.php" method="post" class="signup">
+                <label for="username">Username:</label> 
+                <input type="text" id="username" name="username" required><br><br> 
+                <label for="email">Email Address:</label> 
+                <input type="email" id="email" name="email_add" required><br><br> 
+                <label for="password">Password:</label> 
+                <input type="password" id="password" name="password" required><br><br> 
+                <label for="confirm-password">Confirm Password:</label> 
+                <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+                <input type="submit" name="submit" value="Sign up">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
