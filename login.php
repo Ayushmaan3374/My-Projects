@@ -16,12 +16,11 @@ if ($conn->connect_error) {
 }
 
 // Get form data
-$username = $_POST['username'];
 $email = $_POST['email_add'];
 $password = $_POST['password'];
 
 // Query to retrieve user data from database
-$sql = "SELECT * FROM users WHERE username = '$username' OR email = '$email' AND password = '$password'";
+$sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
